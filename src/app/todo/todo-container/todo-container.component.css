@@ -1,0 +1,8 @@
+.todo--container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  /*background-color: lightblue;*/
+}

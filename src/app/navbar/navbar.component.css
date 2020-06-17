@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.navbar__blue {
+  background-color: #35aac3;
+  color: white;
+}
+
+.navbar-item--container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.navbar-text {
+  padding-left: 1rem;
+}
+
+.navbar-text__blue {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.navbar-item {
+  display: flex;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+.navbar-item--search {
+  height: 2rem;
+  width: 15rem;
+  border-radius: 1rem;
+  padding-left: 0.4rem;
+}
+
+.userBild {
+  display: flex;
+  font-size: inherit;
+}

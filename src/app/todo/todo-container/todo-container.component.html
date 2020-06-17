@@ -1,0 +1,8 @@
+<app-navbar (search)="search($event)" (enableSearch)="enableFilter = $event"></app-navbar>
+<div class="todo--container">
+  <app-todo-list [todos]="enableFilter && searchString !== '' ? filterTodos : todos"
+                 (deleteTodoClicked)="deleteTodo($event)"
+                 (todoDoneClicked)="updateTodo($event)">
+  </app-todo-list>
+  <app-bottombar (addTodoClicked)="addTodo($event)"></app-bottombar>
+</div>

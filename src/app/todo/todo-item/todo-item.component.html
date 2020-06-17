@@ -1,0 +1,12 @@
+<div class="todo-item todo-item__blue" id="todo-template">
+  <div class="todo-item--container">
+    <input type="checkbox" [(ngModel)]="todoDone">
+    <div class="todo-item--title">
+      <div class="todo-item--title-text" id="todo-text">{{todoItem.text}}</div>
+    </div>
+  </div>
+  <button class="todo-item--button" (click)="deleteTodo()">
+      <span class="material-icons custom-icons">
+      delete_forever</span>
+  </button>
+</div>

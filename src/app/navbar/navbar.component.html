@@ -1,0 +1,13 @@
+<nav class="navbar navbar__blue">
+  <div class="navbar-text navbar-text__blue">Aufgaben</div>
+  <div class="navbar-item--container">
+    <input *ngIf="showSearch" type="text" class="navbar-item--search" [(ngModel)]="searchString" />
+    <button class="navbar-item">
+      <span class="material-icons custom-icons" (click)="toggleSearch()">search</span>
+    </button>
+    <button class="navbar-item">
+    <span class="material-icons custom-icons">
+      account_circle
+    </span></button>
+  </div>
+</nav>

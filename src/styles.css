@@ -1,1 +1,30 @@
-/* Add application styles & imports to this file! */
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.body__blue{
+  background-color: lightblue;
+}
+
+.custom-icons {
+  font-size: inherit !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* You can add global styles to this file, and also import other style files */
