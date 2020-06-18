@@ -1,3 +1,6 @@
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {ITodoItem} from "../types/itodo-item";
+
 @Component({
   selector: 'app-bottombar',
   templateUrl: './bottombar.component.html',
