@@ -43,7 +43,7 @@ export class TodoService {
           maxId = todo.id;
         }
       });
-      todos.push({text: todoItem.text, id: ++maxId});
+      todos.push({...todoItem, id: ++maxId});
       return this.putList(todos);
     }));
   }

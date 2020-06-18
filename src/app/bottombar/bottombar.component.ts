@@ -1,6 +1,3 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {ITodoItem} from "../types/itodo-item";
-
 @Component({
   selector: 'app-bottombar',
   templateUrl: './bottombar.component.html',
@@ -8,7 +5,7 @@ import {ITodoItem} from "../types/itodo-item";
 })
 export class BottombarComponent implements OnInit {
 
-  private _todoItem: ITodoItem = {text: ""};
+  private _todoItem: ITodoItem = {text: "", done: false};
 
   get todoItem(): ITodoItem {
     return this._todoItem;
@@ -28,7 +25,11 @@ export class BottombarComponent implements OnInit {
   }
 
   addNewTodo() {
-    this.addTodoClicked.emit({...this.todoItem});
-    this.todoItem.text = "";
+    if (this.todoItem.text.trim() === "") {
+      alert("Bitte geben Sie einen ToDo-Text ein");
+    } else {
+      this.addTodoClicked.emit({...this.todoItem});
+      this.todoItem.text = "";
+    }
   }
 }

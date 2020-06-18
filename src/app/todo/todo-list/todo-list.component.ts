@@ -16,12 +16,12 @@ export class TodoListComponent implements OnInit {
 
   @Input()
   set todos(value: ITodoItem[]) {
-    this._todos = value.sort((a, b): number => {
+    this._todos = value.sort((a, b) =>
       /* if (a.done && !b.done) {return 1;}
       if (!a.done && b.done) {return -1;}
       return 0; */
-      return +a.done - +b.done;
-    });
+       +a.done - +b.done
+    );
   }
 
   @Output()

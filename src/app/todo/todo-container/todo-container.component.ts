@@ -81,8 +81,9 @@ export class TodoContainerComponent implements OnInit {
   public search(searchText: string) {
     this.searchString = searchText;
     this.filterTodos = this.todos.filter(todo => {
-      return todo.text.includes(searchText);
+      return todo.text.toLowerCase().includes(searchText.toLowerCase());
     });
+
   }
 
 }
